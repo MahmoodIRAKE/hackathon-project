@@ -15,16 +15,6 @@ function App() {
         </div>)
 }
 
-    {/* <BrowserRouter> */}
-          {/* <div> */}
-            {/* <Switch> */}
-              {/* <Route path="/" exact component={HomePage} /> */}
-              {/* <Route path="/location" exact component={LocationPage} /> */}
-              {/* <Route component={PageNotFound} />
-            </Switch> */}
-          {/* </div> */}
-        {/* </BrowserRouter> */}
-
 
 
 export default App;

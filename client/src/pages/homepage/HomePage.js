@@ -37,7 +37,7 @@ function Homepage() {
 
   return <div className='homepage-container'>
     {/* <div className='title' >Map For All</div> */}
-    <Wrapper apiKey={"AIzaSyCWfCIVuNtnHeD1cbGdPzhekpoF1By3BKc"} >
+    <Wrapper apiKey={process.env.REACT_APP_MAP_KEY} >
       <Map places={places} placeOnMap={bringPlaceFromMap} />
     </Wrapper>
     <LocationPage placeData={placeOnMap} /> 
