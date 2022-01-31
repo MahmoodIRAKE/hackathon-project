@@ -18,7 +18,7 @@ app.use(cors(CorsConfig))
 app.use(express.json());
 
 
-const publicPath = path.join(__dirname, '../client/build');
+const publicPath = path.join(__dirname, './client/build');
 
 app.use(express.static(publicPath));
 
