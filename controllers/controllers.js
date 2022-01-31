@@ -3,9 +3,8 @@ import { PlaceText } from "../models/placeText.js";
 import { monitorScraping } from "../Scraper/monitor.js";
 import fs from 'fs';
 
-// const PlacesData = fs.readFileSync('./DB/places.json', 'utf8');
-// const PlacesObj = JSON.parse(PlacesData);
-
+const PlacesData = fs.readFileSync('./DB/places.json', 'utf8');
+const PlacesObj = JSON.parse(PlacesData);
 
 
 
@@ -31,6 +30,7 @@ const getAllPlaces = async (req, res) => {
 
 const startScrapping = async (req, res) => {
     try {
+        console.log(PlacesObj)
         monitorScraping(PlacesObj);
 
     } catch (e) {
