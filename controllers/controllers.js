@@ -29,13 +29,13 @@ const getAllPlaces = async (req, res) => {
 
 
 
-// const startScrapping = async (req, res) => {
-//     try {
-//         monitorScraping(PlacesObj);
+const startScrapping = async (req, res) => {
+    try {
+        monitorScraping(PlacesObj);
 
-//     } catch (e) {
-//         res.send({ nooooo: e.message })
-//     }
-// }
+    } catch (e) {
+        res.send({ nooooo: e.message })
+    }
+}
 
-export { getAllPlaces, getPlaceInfo };
+export { getAllPlaces, getPlaceInfo,startScrapping };
