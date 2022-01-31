@@ -1,6 +1,6 @@
 import { Place } from "../models/place.js";
 import { PlaceText } from "../models/placeText.js";
-import { monitorScraping } from "../scraper/monitor.js";
+import { monitorScraping } from "../Scraper/monitor.js";
 import fs from 'fs';
 
 const PlacesData = fs.readFileSync('./DB/places.json', 'utf8');
