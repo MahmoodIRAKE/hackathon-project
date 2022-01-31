@@ -1,10 +1,9 @@
-#map{
-    width:100vw;
-    height:100vh;
+#map {
+  width: 100vw;
+  height: 100vh;
 }
-#marker{
-    width:5px;
-    height:5px;
-    background-color: blue;
+#marker {
+  width: 5px;
+  height: 5px;
+  background-color: blue;
 }
-

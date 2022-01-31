@@ -5,34 +5,23 @@
   --light: #f3f3f3;
 }
 
-.info-container {
-  width: 100%;
-  height: 30vmin;
-  background-color: rgba(122, 186, 202);
-  border-radius: 2rem;
-  box-shadow: 1rem 1rem 2rem gray;
-  background-image: linear-gradient(
-    to bottom left,
-    var(--primary) 10%,
-    var(--secondary) 115%
-  );
-}
-
-.imgs-container{
+.imgs-container {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
-.imgs-container img{
+.imgs-container img {
   width: 30%;
   height: 200px;
-  margin-top:3.5%;
+  margin-top: 3.5%;
+  border-radius: 2rem;
+  box-shadow: 1rem 1rem 2rem rgb(15, 15, 15);
 }
 
-@media(max-width: 506px){
-  .imgs-container img{
+@media (max-width: 506px) {
+  .imgs-container img {
     width: 25%;
     height: 100%;
-    margin-top:3.5%;
+    margin-top: 3.5%;
   }
 }

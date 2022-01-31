@@ -29,7 +29,7 @@ const Map = ({ places, placeOnMap }) => {
             map,
             title: place.name,
         }
-        return <Marker markerPoint={temp} place={place}  placeOnMap={placeOnMap} />
+        return <Marker markerPoint={temp} place={place}  placeOnMap={placeOnMap} key={place._id}/>
     })}
      </div>
 }

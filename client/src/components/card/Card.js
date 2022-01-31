@@ -2,11 +2,7 @@ import React from 'react';
 import "./card.css"
 
 function Card({placeInfo,lang}) {
-    
-    console.log(placeInfo)
-    
-
- 
+        
     return <div className='box-container'>
            
         {placeInfo ?  

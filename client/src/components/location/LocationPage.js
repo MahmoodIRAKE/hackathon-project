@@ -13,24 +13,22 @@ function LocationPage(props) {
     setPlacesInfo(props.placeData)
   }, [props.placeData])
 
-  const lang = ['Hebrew', 'English', 'Russian', 'Arabic'];
+  const lang = ['עברית', 'English', 'русский', 'العربية'];
 
   return (
     <div className="location-container">
 
       <div className='btn-head-container'>
-        <p>Languages/لغات/שפות/языки</p>
         <div className='btn-container'>
       {lang.map((oneLang, index) => {
         return (
-          <BtnComponent id={index} title={oneLang} setSelectedLanguage={setSelectedLanguage} />
+          <BtnComponent id={index} title={oneLang} key={index} setSelectedLanguage={setSelectedLanguage} />
         )
       })}
       </div>
       </div>
 
       <Card placeInfo={props.placeData[0]} lang={selectedLanguage} />
-      {/* <Post article="post article"/> */}
       <Images info={props.placeData[1]} />
     </div>)
 }

@@ -6,7 +6,7 @@ function Images({info}) {
   return <div className='info-container'>
       {info?<div className='imgs-container'>
         {info.images.map((src)=>{
-         return  <img src={src} alt={info.name} />
+         return  <img src={src} alt={info.name} className='img' key={src}/>
         })}
       </div>
         :<></>}
