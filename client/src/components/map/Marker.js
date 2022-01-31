@@ -11,14 +11,12 @@ const eventListeners=()=>{
   marker.addListener("mouseover", () => {
     pop.open({
       anchor: marker,
-      map,
       shouldFocus: false,
     });
   });
   marker.addListener("mouseout", () => {
     pop.close({
       anchor: marker,
-      map,
       shouldFocus: false,
     });
   });
@@ -40,7 +38,7 @@ const displayLocationInfo = async (e) => {
 React.useEffect(() => {
     if (!marker) {
       setMarker(new window.google.maps.Marker());
-      setPop(new google.maps.InfoWindow({
+      setPop(new window.google.maps.InfoWindow({
         content: markerPoint.title,
       }))
     }
@@ -53,7 +51,7 @@ React.useEffect(() => {
 
   React.useEffect(() => {
     if (marker&&markerPoint) {
-      marker.setOptions(markerPoint,new google.maps.Size(42, 68));
+      marker.setOptions(markerPoint,new window.google.maps.Size(42, 68));
       eventListeners();
     }
   }, [marker, markerPoint]);
