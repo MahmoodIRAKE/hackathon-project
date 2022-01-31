@@ -19,6 +19,14 @@
   position: relative;
   background-color:rgba(192, 209, 224, 0.4);
 }
+@media(max-width: 506px){
+  .homepage-container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color:rgba(192, 209, 224, 0.4);
+  }
+}
 
 .title{
  position: absolute;
